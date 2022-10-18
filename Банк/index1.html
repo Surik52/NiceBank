@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="img">
+        <img class="img1" src="imges/Group 17.svg" alt="">
+        <img class="img2" src="imges/logo.svg" alt="">
+        <div class="reg">
+            <button class="reg1" id="reg1" >Регистрация</button>
+            <button class="reg1" id="reg1">Войти</button>
+        </div>
+    </div>
+    </header>
+    <nav class="dvs-menu">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-bank"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-money"></i>Swap</a>
+            <ul>
+                <li><a href="index$.html">Обменный курс $</a></li>
+                <li><a href="idexEUR.html">Обменный курс €</a></li>
+            </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-navicon"></i>Menu</a>
+            <ul>
+                <li><a href="index1.html">Кредит</a></li>
+                <li><a href="index2.html">Рассрочка</a></li>
+                <li><a href="index3.html">Ипотека</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="credit">
+        <h1>Кредит</h1>
+        <div class="point">
+            <div class="asd">
+            <div class="first">
+            
+            <div>
+                <div class="asd1">
+                <input type="number" class="inputNumber" id="num1" value="200000" min="200000" max="3000000"/>
+                <h2 id="rangeValue" ></h2><p>Руб</p>
+            </div>
+                <input type="range" id="range1" class="range1" value="200000"min="200000" max="3000000" step="100000" onmousemove="rangeSlider(this.value)" onChange="rangeSlider(this.value)" >
+                <script>
+                    var range = document.getElementById('range1');
+                    var field = document.getElementById('num1');
+                    range.addEventListener('input', function (e) {
+                        field.value = e.target.value;
+                    });
+                    
+                </script>
+            </div>
+            </div>
+            <div class="second">
+                <div>
+                    <div class="asd2">
+                    <input type="number" class="inputNumber1" id="num2" value="12" min="12" max="84"/>
+                    <h2 id="rangeValue" ></h2><p>Месяцев</p>
+                </div>
+                    <input type="range" id="range2" class="range1" value="12" min="12" max="84" step="12" onmousemove="rangeSlider(this.value)" onChange="rangeSlider(this.value)" >
+                    <script>
+                        var range1 = document.getElementById('range2');
+                        var field1 = document.getElementById('num2');
+                        range1.addEventListener('input', function (e) {
+                            field1.value = e.target.value;
+                        });
+                        
+                    </script>
+                </div>
+                </div>
+                <button type="sumbit" class="Click" id="sumbit">Оформить</button>
+                    <script>
+                        document.querySelector('#sumbit').onclick = function(){
+                            alert("Поздравляем с офромлением кредита!")
+                        }
+                    </script>
+            </div>
+            
+            <div class="num3">
+                <div class="border">
+                <span>Ежемесячная плата:</span>
+                <span class="number"></span><h2 class="rub">Руб</h2>
+            </div>
+                <button type="math" class="Click1" id="sumbit1" >Расчитать
+                    <script>
+                        output = document.querySelector('.number');
+                        sumbit1.onclick = () =>
+                        output.innerHTML = Math.round((+num1.value*0.054*(num2.value/12) + +num1.value)/num2.value)
+                        
+                    </script>
+                </button>
+            </div>
+    </div>
+    </div>
+    <div class="footer">
+        <img src="imges/Group 15.svg" alt="">
+    </div>
+</body>
+</html>

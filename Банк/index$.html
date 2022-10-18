@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style$.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="img">
+        <img class="img1" src="imges/Group 17.svg" alt="">
+        <img class="img2" src="imges/logo.svg" alt="">
+        <div class="reg">
+            <button class="reg1" id="reg1" >Регистрация</button>
+            <button class="reg1" id="reg1">Войти</button>
+        </div>
+    </div>
+    </header>
+    <nav class="dvs-menu">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-bank"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-money"></i>Swap</a>
+            <ul>
+                <li><a href="index$.html">Обменный курс $</a></li>
+                <li><a href="idexEUR.html">Обменный курс €</a></li>
+            </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-navicon"></i>Menu</a>
+            <ul>
+                <li><a href="index1.html">Кредит</a></li>
+                <li><a href="index2.html">Рассрочка</a></li>
+                <li><a href="index3.html">Ипотека</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="credit">
+        <h1>Обменный курс USD</h1>
+        <div class="buydollar">
+       <span>купить</span>
+       <div class="buy">
+        <div class="dollar">
+       <input id="InpFrm1" type="number" value="1" min="1" /><p>$</p>
+    </div>
+    <div class="rubl">
+       <input id="InpFrm2" type="number" value="61.68" min="61.68" /><p>Руб</p>
+    </div>
+    </div>
+       <script>
+       InpFrm1.addEventListener('input',function(){
+       InpFrm2.value= Math.round((InpFrm1.value)*61.68)
+    });
+       InpFrm2.addEventListener('input' , function(){
+        InpFrm1.value = Math.round(InpFrm2.value/61.68)
+       })
+    
+       </script>
+       <div class="button">
+       <button type="submit1" id="sumbit1">Купить</button>
+       <script>
+        document.getElementById('sumbit1').onclick = function(){
+            alert("Поздравляем с покупкой ᅠ" + InpFrm1.value + "$")
+        }
+    </script>
+    </div>
+       </div>
+<div class="proddollar">
+<span>продать</span>
+<div class="buy">
+    <div class="dollar">
+   <input id="InpFrm3" type="number" value="1" min="1" /><p>$</p>
+</div>
+<div class="rubl">
+   <input id="InpFrm4" type="number" value="61.68" min="61.68" /><p>Руб</p>
+</div>
+</div>
+   <script>
+   InpFrm3.addEventListener('input',function(){
+   InpFrm4.value= Math.round((InpFrm3.value)*61.68)
+});
+   InpFrm4.addEventListener('input' , function(){
+    InpFrm3.value = Math.round(InpFrm4.value/61.68)
+   })
+
+   </script>
+   <div class="button">
+    <button type="submit2" id="xer">Продать</button>
+    <script>
+     document.getElementById('xer').onclick = function(){
+         alert("Поздравляем с продажей ᅠ" + InpFrm3.value + "$")
+     }
+ </script>
+ </div>
+</div>
+    </div>
+
+    <div class="footer">
+        <img src="imges/Group 15.svg" alt="">
+    </div>
+</body>
+</html>

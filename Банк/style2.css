@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("imges/Desktop\ -\ 1\ \(2\).png") ;
+}
+header {
+    margin-bottom: 50px;
+    width: 100%; 
+    height: 120px;
+    background-color: #686363;
+    border-radius: 0px 0px 33px 33px;
+    
+}
+.img {
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.img1 {
+    width: 80px;
+
+   
+}
+
+.img2 {
+    width: 350px;
+    margin-left: 250px;
+}
+
+
+.reg {
+width: 370px;
+height: 59px;
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
+}
+
+.reg1{
+    width: 150px;
+    height: 50px;
+    background-color: #E6792F;
+    border: none;
+    border-radius: 33px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Button */
+
+.dvs-menu {
+    margin: 0 auto;
+    width: 700px;
+    background: #E6792F;
+    border-radius: 33px;
+
+}
+
+.dvs-menu ul,
+.dvs-menu ol {
+    list-style: none;
+}
+
+.dvs-menu > ul {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dvs-menu > ul li a {
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 15px 70px 15px 70px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    
+}
+
+.dvs-menu > ul li {
+    position: relative;
+}
+.dvs-menu > ul li > a i.fa{
+    position: absolute;
+    margin-left: 20px;
+    top: 10px;
+    left: 0px;
+    font-size: 30px;
+}
+.dvs-menu li a:hover {
+    background: #454447 ;
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black ;
+    transition: all 0.3s ease;
+}
+
+
+.dvs-menu li ul {
+    position: absolute;
+    min-width: 220px;
+    display: none;
+    padding-left: 0;
+}
+.dvs-menu li > ul li{
+    
+}
+.dvs-menu li > ul li a {
+    padding: 20px;
+    text-transform: none;
+    background: #E6792F;
+}
+.dvs-menu li:hover > ul {
+    display: block;
+}
+
+/* button end */
+
+h1 {
+    font-size: 60px;
+    padding: 30px;
+}
+.credit {
+position: absolute;
+width: 1721px;
+height: 944px;
+left: 68px;
+top: 500px;
+background: rgba(100, 99, 102, 0.5);
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 33px;
+}
+
+
+
+.footer {
+position: absolute;
+width: 100%;
+height: 213px;
+left: 0px;
+top: 1600px;
+background: #686363;
+border-radius: 33px 33px 0px 0px;
+    }
+    
+    .footer img {
+        padding-left: 100px;
+        padding-top: 70px;
+        cursor: pointer;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        font-size: 50px;
+    }
+    
+    input[type='range'] {
+        overflow: hidden;
+      width: 600px;
+      height: 30px;
+      -webkit-appearance: none;
+      background-color: #ED7D31;
+      border-radius: 20px;
+    }
+    input[type='range']::-webkit-slider-thumb {
+        width: 60px;
+        -webkit-appearance: none;
+        height: 30px;
+        cursor:pointer;
+        background: #D9D9D9;
+        border-radius: 20px;
+      }
+      
+      .first {
+        padding-bottom: 100px;
+      }
+      .text {
+        display: flex;
+        padding-left: 50px;
+      }
+      
+      .point {
+        margin: 0;
+        padding: 50px;
+      }
+
+      button[type="sumbit"] {
+        width: 400px;
+        height: 100px;
+        background-color: #E6792F;
+        border-radius: 33px;
+        cursor: pointer;
+        border: none;
+        margin-top: 100px;
+      }
+      .point {
+        display: flex;
+      }
+
+      input[type="number"]{
+        width: 200px;
+        height: 50px;
+        background-color: #686363;
+        font-size: 25px;
+      }
+      
+    button[type="math"]{
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+        background-color: #E6792F;
+        border-radius: 33px;
+        cursor: pointer;
+        border: none;
+        
+    }
+
+    .asd1 {
+        display: flex;
+    }
+    .asd2 {
+        display: flex;
+    }
+    
+    .num3 {
+        width: 1000px;
+        height: 500px;
+        padding: 70px;
+        
+    }
+    
+    .border {
+        width: 800px;
+        height: 80px;
+        display: flex;
+        background-color: #E6792F;
+        border-radius: 10px;
+
+    }
+    .rub {
+        padding-left: 10px;
+        font-weight: 400;
+    }
